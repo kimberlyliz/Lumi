@@ -65,6 +65,7 @@ flutter:
     - assets/
     - assets/Filmes/
     - assets/Feed/
+    - assets/images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
