@@ -1,13 +1,13 @@
-import 'dart:async';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lumi_code/Home.dart';
 import 'dart:ui';
 import 'package:lumi_code/PagesLogin/SignInPage.dart';
 
 bool _obscuretext = true;
 
-class LoginPage extends StatefulWidget {
+ //import 'package:trabalhoo/tela1.dart';
+
+
+ class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
@@ -243,6 +243,7 @@ class _LoginPageState extends State<LoginPage> {
           ],
         ),
       );
+
   void buton1() {
     Navigator.of(context).pop();
   }
