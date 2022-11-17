@@ -9,7 +9,7 @@ class Trailers extends StatelessWidget {
           alignment: Alignment.bottomLeft,
           height: 75,
           child: Image.asset(
-            "assets/SasL.JPG",
+            "assets/SasL.jpg",
             fit: BoxFit.fill,
           ),
         ),
