@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lumi_code/Home.dart';
 import 'dart:ui';
+
 
 class IconPage extends StatefulWidget {
   const IconPage({super.key});
@@ -12,6 +14,7 @@ class _IconPageState extends State<IconPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 27, 5, 27),
         body: SingleChildScrollView(
       child: Column(
         children: [
@@ -22,12 +25,14 @@ class _IconPageState extends State<IconPage> {
             'assets/images/Unknown.png',
             width: 320,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25),
-            child: Text(
-              'Adicionar foto do perfil',
-              style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: Text(
+                'Adicionar foto do perfil',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
           SizedBox(
@@ -56,13 +61,19 @@ class _IconPageState extends State<IconPage> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: MaterialButton(
-                  onPressed: () {
-                    setState(() {});
-                  },
-                  child: Text(
-                    'Adicionar uma foto',
-                    style: TextStyle(color: Colors.white),
-                  )),
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return Home();
+                    }),
+                  );
+                },
+                child: Text(
+                  'Adicionar uma foto',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
             ),
           ),
           SizedBox(height: 10),
@@ -75,7 +86,12 @@ class _IconPageState extends State<IconPage> {
               ),
               child: MaterialButton(
                 onPressed: () {
-                  setState(() {});
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return Home();
+                    }),
+                  );
                 },
                 child: Text(
                   'Pular',

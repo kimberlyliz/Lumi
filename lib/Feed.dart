@@ -69,7 +69,6 @@ class _FeedState extends State<Feed> {
           ),
           child: Stack(
             children: const [
-              //FAZER/COLAR SEU CÓDIGO AQUI.
               UserPostsFeed()
             ],
           ),

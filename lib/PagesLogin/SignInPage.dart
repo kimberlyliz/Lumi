@@ -16,6 +16,7 @@ class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 27, 5, 27),
         body: SingleChildScrollView(
       child: Column(children: [
         Image.asset(

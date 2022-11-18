@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:lumi_code/Home.dart';
+import 'package:lumi_code/Inicio.dart';
 import 'dart:ui';
 import 'package:lumi_code/PagesLogin/SignInPage.dart';
 
 bool _obscuretext = true;
 
- //import 'package:trabalhoo/tela1.dart';
+//import 'package:trabalhoo/tela1.dart';
 
-
- class LoginPage extends StatefulWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
@@ -15,7 +16,7 @@ bool _obscuretext = true;
 }
 
 class _LoginPageState extends State<LoginPage> {
- /*  @override
+  /*  @override
   void initState() {
     // TODO: implement initState
     super.initState();
@@ -28,145 +29,163 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 27, 5, 27),
-        body: SingleChildScrollView(
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Image.asset(
-              'assets/images/image.png',
-              width: 320,
+      backgroundColor: Color.fromARGB(255, 27, 5, 27),
+      body: SingleChildScrollView(
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Image.asset(
+            'assets/images/image.png',
+            width: 320,
+          ),
+          SizedBox(height: 10),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: TextField(
+                decoration: InputDecoration(
+                  enabledBorder:
+                      UnderlineInputBorder(borderSide: BorderSide.none),
+                  hintText: '  Email ou nome de usuário',
+                ),
+              ),
             ),
-            SizedBox(height: 10),
-            Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        enabledBorder:
-                            UnderlineInputBorder(borderSide: BorderSide.none),
-                        hintText: '  Email ou nome de usuário',
-                      ),
-                    ))),
-            SizedBox(
-              height: 10,
-            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
 
-            // password textfield
+          // password textfield
 
-            Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(12),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: TextFormField(
+                obscureText: _obscuretext,
+                decoration: InputDecoration(
+                  hintText: '  Senha',
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide.none,
                   ),
-                  child: TextFormField(
-                    obscureText: _obscuretext,
-                    decoration: InputDecoration(
-                      hintText: '  Senha',
-                      enabledBorder: UnderlineInputBorder(
-                        borderSide: BorderSide.none,
-                      ),
-                      suffixIcon: IconButton(
-                        onPressed: () {
-                          setState(() {
-                            _obscuretext != _obscuretext;
-                          });
-                        },
-                        icon: Icon(_obscuretext
-                            ? Icons.visibility
-                            : Icons.visibility_off),
-                      ),
-                    ),
+                  suffixIcon: IconButton(
+                    onPressed: () {
+                      setState(() {
+                        _obscuretext != _obscuretext;
+                      });
+                    },
+                    icon: Icon(
+                        _obscuretext ? Icons.visibility : Icons.visibility_off),
                   ),
-                )),
-
-            SizedBox(
-              height: 10,
+                ),
+              ),
             ),
-            // sign in button
-            Padding(
+          ),
+
+          SizedBox(
+            height: 10,
+          ),
+          // sign in button
+
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                fixedSize: const Size(340, 60),),
+            
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return Home();
+                }),
+              );
+            },
+            child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: Container(
                 padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 0, 100, 147),
+                //  color: Color.fromARGB(255, 0, 100, 147),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Center(
-                  child: Text('Entrar',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
-                      )),
+                  child: Text(
+                    'Entrar',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                    ),
+                  ),
                 ),
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
-            // esqueceu a senha?
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  MaterialButton(
-                    onPressed: () {
-                      openDialog();
-                    },
-                    child: Text(
-                      'Esqueceu a senha?',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
+          ),
+
+          SizedBox(
+            height: 10,
+          ),
+          // esqueceu a senha?
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MaterialButton(
+                  onPressed: () {
+                    openDialog();
+                  },
+                  child: Text(
+                    'Esqueceu a senha?',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
-                ],
+                ),
+              ],
+            ),
+          ),
+
+          SizedBox(
+            height: 24,
+          ),
+          // nao é cadastrado? cadastre-se agora
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 2),
+            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Text(
+                "Não tem conta?",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey,
+                ),
               ),
-            ),
-
-            SizedBox(
-              height: 24,
-            ),
-            // nao é cadastrado? cadastre-se agora
-            Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 2),
-                child:
-                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                  Text("Não tem conta?",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey,
-                      )),
-                  Padding(padding: const EdgeInsets.symmetric(horizontal: 2)),
-                  MaterialButton(
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) {
-                        return SignInPage();
-                      }));
-                    },
-                    child: Text(
-                      "Criar conta",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                  )
-                ])),
-          ]),
-        )
-        );
+              Padding(padding: const EdgeInsets.symmetric(horizontal: 2)),
+              MaterialButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return SignInPage();
+                  }));
+                },
+                child: Text(
+                  "Criar conta",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              )
+            ]),
+          ),
+        ]),
+      ),
+    );
   }
-
-
 
   Future openDialog() => showDialog(
         context: context,
@@ -251,7 +270,4 @@ class _LoginPageState extends State<LoginPage> {
   void buton2() {
     Navigator.of(context).pop();
   }
-
-
-
 }

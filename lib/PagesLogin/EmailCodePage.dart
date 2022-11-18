@@ -14,6 +14,7 @@ class _EmailCodePageState extends State<EmailCodePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 27, 5, 27),
         body: SingleChildScrollView(
       child: Column(children: [
         SizedBox(
@@ -47,7 +48,7 @@ class _EmailCodePageState extends State<EmailCodePage> {
             child: Center(
               child: Row(children: [
                 Text(
-                  'para o seu email.',
+                  '               para o seu email.',
                   style: TextStyle(
                     color: Colors.white,
                   ),
@@ -79,7 +80,7 @@ class _EmailCodePageState extends State<EmailCodePage> {
             ),
             child: TextField(
                 decoration: InputDecoration(
-                    hintText: 'Código para login',
+                    hintText: ' Código para login',
                     disabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide.none,
                     ))),
