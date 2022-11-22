@@ -21,6 +21,76 @@ CADASTRO USUÁRIO
 13) Botão 'cadastre-se'
 */
 
+
+
+
+import 'package:equatable/equetable.dart';
+
+
+
+
+
+
+//LoginPage:
+class EmptyUser_email extends Equatable{
+  @override
+}
+class Emptysenha extends Equatable{
+  @override
+}
+class ButtonEntrarPress extends Equatable{
+@override
+}
+class ButtonForgotSenhaPress extends Equatable{
+@override
+}
+class ButtonCriarConta extends Equatable{
+@override
+}
+
+//Sing up page:
+class EmptyEmail extends Equatable{
+@override
+}
+class ButtonAvançar extends Equatable{
+  @override
+}
+class Entrar extends Equatable{
+  @override 
+}
+
+//CodeConfirmaçãopagee:
+
+
+class CodeLogin extends Equatable{
+  @override
+}
+
+
+class ButtonAvançar extends Equatable{
+  @override
+}
+
+//CadastroUsuarioPagee:
+
+
+class Emptyuser extends Equatable{
+  @override
+}
+// ja criado essa class antes logo n criarei dnv, tentarei ver depois se outras classes podem ser removidas para melhorar o codigo class Emptysenha extends Equatable{
+ // @override
+//}
+
+
+class ButtonCadastrese extends Equatable{
+  @override
+}
+
+
+
+
+
+
 part of 'login_bloc.dart';
 
 @immutable
