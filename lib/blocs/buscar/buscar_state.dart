@@ -1,11 +1,31 @@
 
-/*1) Page Inital (Inicializar o bloc) 
+/*1) Página Inicial
+  2) Pesquisa - mensagem 'sem resultados'
+  3) Pesquisa - buscas aparecendo
+ */
 
-2) Page loaded (Página carregada - com as buscas aparecendo) */
 
-part of 'buscar_bloc.dart';
+import 'package:equatable/equatable.dart';
+import 'package:flutter/foundation.dart';
 
-@immutable
-abstract class BuscarState {}
+class BuscarState extends Equatable{
+  @override
+  List<Object> get props => [];
+}
 
-class BuscarInitial extends BuscarState {}
+//carregando
+class BuscarLoadingState extends BuscarState {}
+
+//lista vazia - sem resultados
+class BuscarEmptyState  extends BuscarState{
+  final String message;
+
+  BuscarEmptyState({required this.message});
+}
+
+//carregada
+class BuscarStateLoaded extends BuscarState {
+  final List<String> list;
+
+  BuscarStateLoaded({required this.list});
+}
