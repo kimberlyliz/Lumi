@@ -1,3 +1,5 @@
+/* Toda a lógica de negócios fica dentro do arquivo BLoC. 
+Ele simplesmente aceita eventos, executa a lógica e fornece os estados. */
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
