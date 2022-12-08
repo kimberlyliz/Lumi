@@ -1,26 +1,38 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'dart:ui';
 
-import 'package:lumi_code/LoginPage.dart';
 
-class Splash extends StatefulWidget {
-  const Splash({super.key});
+
+
+class Splash extends StatefulWidget {  
 
   @override
   State<Splash> createState() => _SplashState();
+
 }
 
 class _SplashState extends State<Splash> {
+  
+
   @override
+  void initState() {
+    
+    super.initState();
+  }
+
+
+
+  /*@override
   void initState() {
     super.initState();
     Timer(
         Duration(seconds: 3),
         () => Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (BuildContext context) => LoginPage())));
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
