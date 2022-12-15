@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/PagesChat/ChatPage.dart';
-import 'package:lumi_code/PagesChat/HomePage.dart';
+import 'package:lumi_code/Chat/PagesChat/ChatPage.dart';
+import 'package:lumi_code/Chat/PagesChat/HomePage.dart';
 
 
 class Chat extends StatefulWidget {

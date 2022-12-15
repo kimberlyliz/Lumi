@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/Home.dart';
+import 'package:lumi_code/BNB_Inicio/BNB_Inicio.dart';
 import 'dart:ui';
 
 
@@ -65,7 +65,7 @@ class _IconPageState extends State<IconPage> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) {
-                      return Home();
+                      return BNB_Inicio();
                     }),
                   );
                 },
@@ -89,7 +89,7 @@ class _IconPageState extends State<IconPage> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) {
-                      return Home();
+                      return BNB_Inicio();
                     }),
                   );
                 },

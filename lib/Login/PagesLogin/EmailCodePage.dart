@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
-import 'package:lumi_code/PagesLogin/SignInPageFirst.dart';
+import 'package:lumi_code/Login/PagesLogin/SignInPageFirst.dart';
 
 class EmailCodePage extends StatefulWidget {
   const EmailCodePage({super.key});

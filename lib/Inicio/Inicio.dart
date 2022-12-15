@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/DescricaoInicio.dart';
-import 'package:lumi_code/Perfil.dart';
+import 'package:lumi_code/Descricao/DescricaoInicio.dart';
+import 'package:lumi_code/Perfil/Perfil.dart';
 
-class Inicio extends StatefulWidget {
-  const Inicio({super.key});
+class TelaDeInicio extends StatefulWidget {
+  const TelaDeInicio({super.key});
 
   @override
-  State<Inicio> createState() => _InicioState();
+  State<TelaDeInicio> createState() => _TelaDeInicioState();
 }
 
-class _InicioState extends State<Inicio> {
+class _TelaDeInicioState extends State<TelaDeInicio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tela Inicio'),
+        title: Text('Tela TelaDeInicio'),
         backgroundColor: Color(0xff220037),
         actions: [
           IconButton(

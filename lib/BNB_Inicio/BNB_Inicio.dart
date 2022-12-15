@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/Inicio.dart';
-import 'package:lumi_code/Perfil.dart';
-import 'package:lumi_code/Chat.dart';
-import 'package:lumi_code/Feed.dart';
-import 'package:lumi_code/Favoritos.dart';
-import 'package:lumi_code/Buscar.dart';
+import 'package:lumi_code/Inicio/Inicio.dart';
+import 'package:lumi_code/Perfil/Perfil.dart';
+import 'package:lumi_code/Chat/Chat.dart';
+import 'package:lumi_code/Feed/Feed.dart';
+import 'package:lumi_code/Favoritos/Favoritos.dart';
+import 'package:lumi_code/Buscar/Buscar.dart';
 
 //tela de definição do Bottom Navigation Bar e sua navegação
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class BNB_Inicio extends StatefulWidget {
+  const BNB_Inicio({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<BNB_Inicio> createState() => _BNB_InicioState();
 }
 
-class _HomeState extends State<Home> {
+class _BNB_InicioState extends State<BNB_Inicio> {
    int myIndex = 0;
    List<Widget> widgetList = const [
-    Inicio(),
+    TelaDeInicio(),
     Chat(),
     Feed(),
     Favoritos(),
@@ -57,10 +57,10 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
             label: 'Início',
             icon: ImageIcon(
-              AssetImage("assets/home512.png"),
+              AssetImage("assets/BNB_Inicio512.png"),
             ),
             activeIcon: ImageIcon(
-              AssetImage('assets/home512cheio.png'),
+              AssetImage('assets/BNB_Inicio512cheio.png'),
             ),
           ),
           BottomNavigationBarItem(

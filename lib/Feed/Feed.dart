@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/model/UserPostsFeed.dart';
+import 'package:lumi_code/Feed/model/UserPostsFeed.dart';
 
 class Feed extends StatefulWidget {
   const Feed({super.key});

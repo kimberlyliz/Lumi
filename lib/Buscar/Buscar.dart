@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/model/movie_model.dart';
+import 'package:lumi_code/Buscar/model/movie_model.dart';
 
 class Buscar extends StatefulWidget {
   const Buscar({super.key});

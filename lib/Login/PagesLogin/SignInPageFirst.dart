@@ -2,7 +2,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
-import 'package:lumi_code/PagesLogin/IconPage.dart';
+import 'package:lumi_code/Login/PagesLogin/IconPage.dart';
 
 bool _obscuretext = true;
 

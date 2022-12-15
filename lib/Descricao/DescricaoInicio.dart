@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/PagesDescricao.dart/BackgroundGradient.dart';
-import 'package:lumi_code/PagesDescricao.dart/Infoline.dart';
-import 'package:lumi_code/PagesDescricao.dart/MoviePageButtons.dart';
-import 'package:lumi_code/PagesDescricao.dart/RatingBar.dart';
-import 'package:lumi_code/PagesDescricao.dart/Trailers.dart';
-import 'package:lumi_code/PagesDescricao.dart/WatchButtons.dart';
+import 'package:lumi_code/Descricao/PagesDescricao/BackgroundGradient.dart';
+import 'package:lumi_code/Descricao/PagesDescricao/Infoline.dart';
+import 'package:lumi_code/Descricao/PagesDescricao/MoviePageButtons.dart';
+import 'package:lumi_code/Descricao/PagesDescricao/RatingBar.dart';
+import 'package:lumi_code/Descricao/PagesDescricao/Trailers.dart';
+import 'package:lumi_code/Descricao/PagesDescricao/WatchButtons.dart';
 
 
 class DescricaoInicio extends StatelessWidget {

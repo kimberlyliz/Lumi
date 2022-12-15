@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lumi_code/Login/LoginPage.dart';
 import 'dart:ui';
-
-import 'package:lumi_code/LoginPage.dart';
-import 'package:lumi_code/PagesLogin/EmailCodePage.dart';
+import 'package:lumi_code/Login/PagesLogin/EmailCodePage.dart';
 
 
 class SignInPage extends StatefulWidget {

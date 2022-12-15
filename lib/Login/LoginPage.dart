@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/Home.dart';
-import 'package:lumi_code/Inicio.dart';
+import 'package:lumi_code/BNB_Inicio/BNB_Inicio.dart';
+import 'package:lumi_code/Inicio/Inicio.dart';
 import 'dart:ui';
-import 'package:lumi_code/PagesLogin/SignInPage.dart';
+import 'package:lumi_code/Login/PagesLogin/SignInPage.dart';
 
 bool _obscuretext = true;
 
@@ -100,7 +100,7 @@ class _LoginPageState extends State<LoginPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) {
-                  return Home();
+                  return BNB_Inicio();
                 }),
               );
             },

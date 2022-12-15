@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'dart:ui';
-import 'package:lumi_code/LoginPage.dart';
+
 
 
 class Splash extends StatefulWidget {

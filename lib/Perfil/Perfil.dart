@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/Home.dart';
+import 'package:lumi_code/BNB_Inicio/BNB_Inicio.dart';
 
 //BOTTOM NAVIGATION BAR NÃO PEGOU
 //Aq o código foi criado a partir do bottom nav bar. Se possível corrigir para apenas chamar a classe do BottomNavBar
