@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lumi_code/splash.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import'package:equatable/equatable.dart';
+
 
 void main() {
   runApp(const MyApp());

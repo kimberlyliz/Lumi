@@ -71,6 +71,9 @@ flutter:
     - assets/Filmes/
     - assets/Feed/
     - assets/images/
+    - assets/Inicio/
+    - assets/Inicio/EmAlta/
+    - assets/DescSerie/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

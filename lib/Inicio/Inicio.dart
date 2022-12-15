@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lumi_code/Descricao/DescricaoInicio.dart';
+import 'package:lumi_code/DescricaoFilme/DescricaoInicio.dart';
 import 'package:lumi_code/Perfil/Perfil.dart';
 
 class TelaDeInicio extends StatefulWidget {

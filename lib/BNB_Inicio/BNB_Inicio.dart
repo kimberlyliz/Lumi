@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:lumi_code/Inicio/Inicio.dart';
+import 'package:lumi_code/Inicio_2/HomePage.dart';
 import 'package:lumi_code/Perfil/Perfil.dart';
 import 'package:lumi_code/Chat/Chat.dart';
 import 'package:lumi_code/Feed/Feed.dart';
 import 'package:lumi_code/Favoritos/Favoritos.dart';
 import 'package:lumi_code/Buscar/Buscar.dart';
+import 'package:lumi_code/Inicio_2/HomePage.dart';
 
 //tela de definição do Bottom Navigation Bar e sua navegação
 
@@ -18,7 +20,7 @@ class BNB_Inicio extends StatefulWidget {
 class _BNB_InicioState extends State<BNB_Inicio> {
    int myIndex = 0;
    List<Widget> widgetList = const [
-    TelaDeInicio(),
+    HomePage(),
     Chat(),
     Feed(),
     Favoritos(),
