@@ -1,9 +1,8 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'dart:ui';
-
 import 'package:lumi_code/LoginPage.dart';
+
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -13,14 +12,14 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
-  @override
+  /*@override
   void initState() {
     super.initState();
     Timer(
         Duration(seconds: 3),
         () => Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (BuildContext context) => LoginPage())));
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
