@@ -57,10 +57,10 @@ class _BNB_InicioState extends State<BNB_Inicio> {
           BottomNavigationBarItem(
             label: 'Início',
             icon: ImageIcon(
-              AssetImage("assets/BNB_Inicio512.png"),
+              AssetImage("assets/home512.png"),
             ),
             activeIcon: ImageIcon(
-              AssetImage('assets/BNB_Inicio512cheio.png'),
+              AssetImage('assets/home512cheio.png'),
             ),
           ),
           BottomNavigationBarItem(
